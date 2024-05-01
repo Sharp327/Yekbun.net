@@ -18362,33 +18362,6 @@ html:not(.layout-footer-fixed) .content-wrapper {
   z-index: -1;
 }
 
-.nav-fill li{
-  position: relative;
-}
-
-.nav-fill li a{
-  padding: 16px 0;
-}
-
-.tab--selected.tab__slider {
-  opacity: 1;
-}
-
-.tab__slider {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  background: #696cff;
-  pointer-events: none;
-  opacity: 0;
-}
-
-.pd-t-24px{
-  padding-top: 24px;
-}
-
 .switch-toggle-slider {
   position: absolute;
   overflow: hidden;
