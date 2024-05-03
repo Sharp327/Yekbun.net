@@ -381,7 +381,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="%" value="10 %" id="slider-pips2-input" class="form-control text-center">
+                                    <input type="text" unit="%" value="10 %" disabled id="slider-pips2-input" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -624,7 +624,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="Sec" value="10 Sec" id="slider-pips3-input" class="form-control text-center">
+                                    <input type="text" unit="Sec" value="10 Sec" disabled id="slider-pips3-input" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -662,7 +662,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="MB" value="10 MB" id="slider-pips4-input" class="form-control text-center">
+                                    <input type="text" unit="MB" value="10 MB" disabled id="slider-pips4-input" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -844,7 +844,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="Sec" value="10 Sec" id="slider-pips5-input" class="form-control text-center">
+                                    <input type="text" unit="Sec" value="10 Sec" disabled id="slider-pips5-input" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -1022,7 +1022,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="Sec" value="10 Sec" id="slider-pips6-input" class="form-control text-center">
+                                    <input type="text" unit="Sec" value="10 Sec" disabled id="slider-pips6-input" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -1523,7 +1523,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="Sec" value="10 Sec" id="slider-pips7-input" class="form-control text-center">
+                                    <input type="text" unit="Sec" value="10 Sec" disabled id="slider-pips7-input" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -1607,7 +1607,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="min" value="10 min" id="slider-pips8-input" class="form-control text-center">
+                                    <input type="text" unit="min" value="10 min" disabled id="slider-pips8-input" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -1767,7 +1767,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="Sec" value="10 Sec" id="slider-pips9-input" class="form-control text-center">
+                                    <input type="text" unit="Sec" value="10 Sec" disabled id="slider-pips9-input" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -1851,7 +1851,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="min" value="10 min" id="slider-pips10-input" class="form-control text-center">
+                                    <input type="text" unit="min" value="10 min" disabled id="slider-pips10-input" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -1977,7 +1977,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="Sec" value="10 Sec" id="slider-pips11-input" class="form-control text-center">
+                                    <input type="text" unit="Sec" value="10 Sec" disabled id="slider-pips11-input" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -2155,7 +2155,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="Sec" value="10 Sec" id="slider-pips12-input" class="form-control text-center">
+                                    <input type="text" unit="Sec" value="10 Sec" disabled id="slider-pips12-input" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -2254,7 +2254,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="Sec" value="10 Sec" id="slider-pips13-input" class="form-control text-center">
+                                    <input type="text" unit="Sec" value="10 Sec" disabled id="slider-pips13-input" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -2439,7 +2439,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="Sec" value="10 Sec" id="slider-pips14-input" class="form-control text-center">
+                                    <input type="text" unit="Sec" value="10 Sec" disabled id="slider-pips14-input" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -2519,7 +2519,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="Sec" value="10 Sec" id="slider-pips15-input" class="form-control text-center">
+                                    <input type="text" unit="Sec" value="10 Sec" disabled id="slider-pips15-input" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
