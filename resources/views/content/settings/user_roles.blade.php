@@ -351,7 +351,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="p-2 rounded mb-2" style="background-color:#FEE9EA">
                             <div class="d-flex pb-2">
                                 <div class="flex-shrink-0">
-                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/storageAlert.svg')}}"
+                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/storagealert.svg')}}"
                                         alt="storageAlert"></div>
                                 </div>
                                 <div class="flex-grow-1 row">
@@ -450,7 +450,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/feedOption.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/feedoption.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -474,7 +474,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/videoCam.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/videocam.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -498,7 +498,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/shareImage.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/shareimage.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -522,7 +522,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/textComment.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/textcomment.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -546,7 +546,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/likeBtn.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/likebtn.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -570,7 +570,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/shareComment.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/sharecomment.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -595,7 +595,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="p-2 rounded mb-2">
                             <div class="d-flex pb-2">
                                 <div class="flex-shrink-0">
-                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/voiceComment.svg')}}"
+                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/voicecomment.svg')}}"
                                         alt="voiceComment"></div>
                                 </div>
                                 <div class="flex-grow-1 row">
@@ -633,7 +633,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="p-2 rounded mb-2">
                             <div class="d-flex pb-2">
                                 <div class="flex-shrink-0">
-                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/shareVideo.svg')}}"
+                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/sharevideo.svg')}}"
                                         alt="shareVideo"></div>
                                 </div>
                                 <div class="flex-grow-1 row">
@@ -722,7 +722,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/dailyShare.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/dailyshare.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -742,7 +742,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/textComment.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/textcomment.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -766,7 +766,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/likeBtn.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/likebtn.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -790,7 +790,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/shareComment.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/sharecomment.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -815,7 +815,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="p-2 rounded mb-2">
                             <div class="d-flex pb-2">
                                 <div class="flex-shrink-0">
-                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/voiceComment.svg')}}"
+                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/voicecomment.svg')}}"
                                         alt="voiceComment"></div>
                                 </div>
                                 <div class="flex-grow-1 row">
@@ -856,7 +856,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
             <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#historySection" aria-controls="historySection">
                 <div class="d-flex justify-content-start align-items-center">
                     <div class="avatar-wrapper">
-                        <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/historySection.svg')}}"
+                        <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/historysection.svg')}}"
                                 alt="historySection"></div>
                     </div>
                     <div class="d-flex flex-column genos-font">
@@ -872,7 +872,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                 <div class="content-group">
                     <div class="d-flex justify-content-start align-items-center">
                         <div class="avatar-wrapper">
-                            <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/historySection.svg')}}"
+                            <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/historysection.svg')}}"
                                     alt="Avatar"></div>
                         </div>
                         <div class="d-flex flex-column genos-font">
@@ -920,7 +920,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/textComment.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/textcomment.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -944,7 +944,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/likeBtn.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/likebtn.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -968,7 +968,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/shareComment.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/sharecomment.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -993,7 +993,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="p-2 rounded mb-2">
                             <div class="d-flex pb-2">
                                 <div class="flex-shrink-0">
-                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/voiceComment.svg')}}"
+                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/voicecomment.svg')}}"
                                         alt="voiceComment"></div>
                                 </div>
                                 <div class="flex-grow-1 row">
@@ -1034,7 +1034,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
             <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#voteSection" aria-controls="voteSection">
                 <div class="d-flex justify-content-start align-items-center">
                     <div class="avatar-wrapper">
-                        <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/voteSection.svg')}}"
+                        <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/votesection.svg')}}"
                                 alt="voteSection"></div>
                     </div>
                     <div class="d-flex flex-column genos-font">
@@ -1050,7 +1050,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                 <div class="content-group">
                     <div class="d-flex justify-content-start align-items-center">
                         <div class="avatar-wrapper">
-                            <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/voteSection.svg')}}"
+                            <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/votesection.svg')}}"
                                     alt="Avatar"></div>
                         </div>
                         <div class="d-flex flex-column genos-font">
@@ -1095,7 +1095,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
             <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#musicSection" aria-controls="musicSection">
                 <div class="d-flex justify-content-start align-items-center">
                     <div class="avatar-wrapper">
-                        <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/musicSection.svg')}}"
+                        <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/musicsection.svg')}}"
                                 alt="musicSection"></div>
                     </div>
                     <div class="d-flex flex-column genos-font">
@@ -1111,7 +1111,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                 <div class="content-group">
                     <div class="d-flex justify-content-start align-items-center">
                         <div class="avatar-wrapper">
-                            <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/musicSection.svg')}}"
+                            <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/musicsection.svg')}}"
                                     alt="Avatar"></div>
                         </div>
                         <div class="d-flex flex-column genos-font">
@@ -1300,7 +1300,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
             <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#videoSection" aria-controls="videoSection">
                 <div class="d-flex justify-content-start align-items-center">
                     <div class="avatar-wrapper">
-                        <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/videoSection.svg')}}"
+                        <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/videosection.svg')}}"
                                 alt="videoSection"></div>
                     </div>
                     <div class="d-flex flex-column genos-font">
@@ -1316,7 +1316,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                 <div class="content-group">
                     <div class="d-flex justify-content-start align-items-center">
                         <div class="avatar-wrapper">
-                            <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/voteSection.svg')}}"
+                            <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/votesection.svg')}}"
                                     alt="Avatar"></div>
                         </div>
                         <div class="d-flex flex-column genos-font">
@@ -1421,7 +1421,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/textComment.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/textcomment.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -1445,7 +1445,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/likeBtn.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/likebtn.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -1469,7 +1469,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/shareComment.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/sharecomment.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -1494,7 +1494,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="p-2 rounded mb-2">
                             <div class="d-flex pb-2">
                                 <div class="flex-shrink-0">
-                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/voiceComment.svg')}}"
+                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/voicecomment.svg')}}"
                                         alt="voiceComment"></div>
                                 </div>
                                 <div class="flex-grow-1 row">
@@ -1535,7 +1535,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
             <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#liveStream" aria-controls="liveStream">
                 <div class="d-flex justify-content-start align-items-center">
                     <div class="avatar-wrapper">
-                        <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/liveStream.svg')}}"
+                        <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/livestream.svg')}}"
                                 alt="liveStream"></div>
                     </div>
                     <div class="d-flex flex-column genos-font">
@@ -1551,7 +1551,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                 <div class="content-group">
                     <div class="d-flex justify-content-start align-items-center">
                         <div class="avatar-wrapper">
-                            <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/liveStream.svg')}}"
+                            <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/livestream.svg')}}"
                                     alt="Avatar"></div>
                         </div>
                         <div class="d-flex flex-column genos-font">
@@ -1584,7 +1584,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="p-2 rounded mb-2">
                             <div class="d-flex pb-2">
                                 <div class="flex-shrink-0">
-                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/liveStream.svg')}}"
+                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/livestream.svg')}}"
                                         alt="voiceComment"></div>
                                 </div>
                                 <div class="flex-grow-1 row">
@@ -1665,7 +1665,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/textComment.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/textcomment.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -1689,7 +1689,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/likeBtn.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/likebtn.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -1713,7 +1713,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/shareComment.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/sharecomment.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -1738,7 +1738,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="p-2 rounded mb-2">
                             <div class="d-flex pb-2">
                                 <div class="flex-shrink-0">
-                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/voiceComment.svg')}}"
+                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/voicecomment.svg')}}"
                                         alt="voiceComment"></div>
                                 </div>
                                 <div class="flex-grow-1 row">
@@ -1875,7 +1875,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/textComment.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/textcomment.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -1899,7 +1899,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/likeBtn.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/likebtn.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -1923,7 +1923,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/shareComment.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/sharecomment.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -1948,7 +1948,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="p-2 rounded mb-2">
                             <div class="d-flex pb-2">
                                 <div class="flex-shrink-0">
-                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/voiceComment.svg')}}"
+                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/voicecomment.svg')}}"
                                         alt="voiceComment"></div>
                                 </div>
                                 <div class="flex-grow-1 row">
@@ -2053,7 +2053,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/textComment.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/textcomment.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -2077,7 +2077,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/likeBtn.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/likebtn.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -2101,7 +2101,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     <div class="content-group d-flex justify-content-between align-center ms-4">
                         <div class="d-flex justify-content-start align-items-center">
                             <div class="avatar-wrapper">
-                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/shareComment.svg')}}"
+                                <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/sharecomment.svg')}}"
                                         alt="Avatar"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
@@ -2126,7 +2126,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="p-2 rounded mb-2">
                             <div class="d-flex pb-2">
                                 <div class="flex-shrink-0">
-                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/voiceComment.svg')}}"
+                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/voicecomment.svg')}}"
                                         alt="voiceComment"></div>
                                 </div>
                                 <div class="flex-grow-1 row">
@@ -2225,7 +2225,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="p-2 rounded mb-2">
                             <div class="d-flex pb-2">
                                 <div class="flex-shrink-0">
-                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/voiceComment.svg')}}"
+                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/voicecomment.svg')}}"
                                         alt="voiceComment"></div>
                                 </div>
                                 <div class="flex-grow-1 row">
@@ -2368,7 +2368,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="p-2 rounded mb-2">
                             <div class="d-flex pb-2">
                                 <div class="flex-shrink-0">
-                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/voiceCalls.svg')}}"
+                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/voicecalls.svg')}}"
                                         alt="voiceComment"></div>
                                 </div>
                                 <div class="flex-grow-1 row">
@@ -2389,7 +2389,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                             </div>
                             <div class="d-flex pb-2">
                                 <div class="flex-shrink-0">
-                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/groupCalls.svg')}}"
+                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/groupcalls.svg')}}"
                                         alt="voiceComment"></div>
                                 </div>
                                 <div class="flex-grow-1 row">
@@ -2410,7 +2410,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                             </div>
                             <div class="d-flex pb-2">
                                 <div class="flex-shrink-0">
-                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/joinToCalls.svg')}}"
+                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/jointocalls.svg')}}"
                                         alt="voiceComment"></div>
                                 </div>
                                 <div class="flex-grow-1 row">
@@ -2448,7 +2448,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="p-2 rounded mb-2">
                             <div class="d-flex pb-2">
                                 <div class="flex-shrink-0">
-                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/videoCalls.svg')}}"
+                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/videocalls.svg')}}"
                                         alt="voiceComment"></div>
                                 </div>
                                 <div class="flex-grow-1 row">
@@ -2469,7 +2469,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                             </div>
                             <div class="d-flex pb-2">
                                 <div class="flex-shrink-0">
-                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/videoGroupCalls.svg')}}"
+                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/videogroupcalls.svg')}}"
                                         alt="voiceComment"></div>
                                 </div>
                                 <div class="flex-grow-1 row">
@@ -2490,7 +2490,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                             </div>
                             <div class="d-flex pb-2">
                                 <div class="flex-shrink-0">
-                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/joinToCalls.svg')}}"
+                                    <div class="avatar avatar-sm mt-1 mx-2"><img src="{{asset('assets/userrole/icons/jointocalls.svg')}}"
                                         alt="voiceComment"></div>
                                 </div>
                                 <div class="flex-grow-1 row">
