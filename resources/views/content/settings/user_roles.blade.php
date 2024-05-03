@@ -107,7 +107,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
             <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#Avatar" aria-controls="Avatar">
                 <div class="d-flex justify-content-start align-items-center">
                     <div class="avatar-wrapper">
-                        <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/user circle.svg')}}"
+                        <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/usercircle.svg')}}"
                                 alt="Avatar"></div>
                     </div>
                     <div class="d-flex flex-column genos-font">
@@ -123,7 +123,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                 <div class="content-group">
                     <div class="d-flex justify-content-start align-items-center">
                         <div class="avatar-wrapper">
-                            <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/user circle.svg')}}"
+                            <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/usercircle.svg')}}"
                                     alt="Avatar"></div>
                         </div>
                         <div class="d-flex flex-column genos-font">
@@ -144,7 +144,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
             <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#Price" aria-controls="Price">
                 <div class="d-flex justify-content-start align-items-center">
                     <div class="avatar-wrapper">
-                        <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/Euro.svg')}}"
+                        <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/euro.svg')}}"
                                 alt="Price"></div>
                     </div>
                     <div class="d-flex flex-column genos-font">
@@ -160,7 +160,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                 <div class="content-group">
                     <div class="d-flex justify-content-start align-items-center pb-2">
                         <div class="avatar-wrapper">
-                            <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/Euro.svg')}}"
+                            <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/euro.svg')}}"
                                     alt="Avatar"></div>
                         </div>
                         <div class="d-flex flex-column genos-font">
