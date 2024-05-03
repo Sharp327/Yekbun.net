@@ -103,7 +103,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                 </div>
             </div>
         </li>
-        <li class="nav-item active" role="presentation">
+        <li class="nav-item" role="presentation">
             <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#Avatar" aria-controls="Avatar">
                 <div class="d-flex justify-content-start align-items-center">
                     <div class="avatar-wrapper">
@@ -119,7 +119,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
         </li>
         @section('tab-page')
             @parent
-            <div class="tab-pane fade active show" id="Avatar" role="tabpanel">
+            <div class="tab-pane fade" id="Avatar" role="tabpanel">
                 <div class="content-group">
                     <div class="d-flex justify-content-start align-items-center">
                         <div class="avatar-wrapper">
