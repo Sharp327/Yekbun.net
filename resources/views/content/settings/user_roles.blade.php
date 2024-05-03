@@ -42,8 +42,8 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
 <div class="d-flex justify-content-between">
     <h4 class="fw-bold py-3 mb-4">
         <span class="text-muted fw-light">Settings /</span>
-        <span class="text-muted fw-light">User Roles /</span>
-        {{ ucfirst($userLevel) }} User
+        {{-- <span class="text-muted fw-light">User Roles /</span> --}}
+        {{ ucfirst($userLevel) == 'Standard' ? 'Educated' : (ucfirst($userLevel) == 'Premium' ? 'Cultivated' : 'Academic') }} User
     </h4>
 </div>
 <ul class="nav nav-tabs nav-fill" role="tablist">
@@ -104,11 +104,11 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
             </div>
         </li>
         <li class="nav-item" role="presentation">
-            <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#Avatar" aria-controls="Avatar">
+            <button type="button" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#avatar" aria-controls="avatar">
                 <div class="d-flex justify-content-start align-items-center">
                     <div class="avatar-wrapper">
                         <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/usercircle.svg')}}"
-                                alt="Avatar"></div>
+                                alt="avatar"></div>
                     </div>
                     <div class="d-flex flex-column genos-font">
                         <span class="fw-semibold">Avatar</span>
@@ -119,7 +119,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
         </li>
         @section('tab-page')
             @parent
-            <div class="tab-pane fade" id="Avatar" role="tabpanel">
+            <div class="tab-pane fade active show" id="avatar" role="tabpanel">
                 <div class="content-group">
                     <div class="d-flex justify-content-start align-items-center">
                         <div class="avatar-wrapper">
@@ -176,8 +176,8 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                         alt="educated"></div>
                             </div>
                             <div class="d-flex flex-column genos-font">
-                                <span class="fw-semibold">Educated</span>
-                                <small class="text-muted">Standard User</small>
+                                <span class="fw-semibold">{{ ucfirst($userLevel) == 'Standard' ? 'Educated' : (ucfirst($userLevel) == 'Premium' ? 'Cultivated' : 'Academic') }} User</span>
+                                <small class="text-muted">{{ ucfirst($userLevel) }} User</small>
                             </div>
                         </div>
                         <!-- <hr class="m-0"> -->
