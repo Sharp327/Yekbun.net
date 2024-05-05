@@ -14,8 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('device_type')->nullable()->default(null)->after('image');
-            $table->string('device_imei')->nullable()->default(null)->after('device_type');
+            $table->string('device_type')->nullable()->default(null);
+            $table->string('device_imei')->nullable()->default(null);
         });
     }
 

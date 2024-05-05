@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Spatie\Activitylog\LogOptions;
 use Illuminate\Support\Facades\URL;
-use Illuminate\Database\Eloquent\Model;
+use Jenssegers\Mongodb\Eloquent\Model;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 

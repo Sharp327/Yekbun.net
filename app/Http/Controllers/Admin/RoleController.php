@@ -3,11 +3,11 @@
 namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use Spatie\Permission\Models\Role;
+use Maklad\Permission\Models\Role;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreRoleRequest;
 use App\Http\Requests\UpdateRoleRequest;
-use Spatie\Permission\Models\Permission;
+use Maklad\Permission\Models\Permission;
 
 class RoleController extends Controller
 {

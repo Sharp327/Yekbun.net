@@ -177,8 +177,9 @@ return [
     App\Providers\EventServiceProvider::class,
     App\Providers\RouteServiceProvider::class,
     App\Providers\MenuServiceProvider::class,
-    Spatie\Permission\PermissionServiceProvider::class,
+    // Maklad\Permission\PermissionServiceProvider::class,
     Jorenvh\Share\Providers\ShareServiceProvider::class,
+    Maklad\Permission\PermissionServiceProvider::class,
   ],
 
   /*

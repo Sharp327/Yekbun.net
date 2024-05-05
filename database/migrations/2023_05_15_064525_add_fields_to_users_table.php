@@ -14,9 +14,9 @@ return new class extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->integer('country_id')->nullable()->default(null)->after('gender');
-            $table->integer('region_id')->nullable()->default(null)->after('country_id');
-            $table->integer('city_id')->nullable()->default(null)->after('region_id');
+            $table->integer('country_id')->nullable()->default(null);
+            $table->integer('region_id')->nullable()->default(null);
+            $table->integer('city_id')->nullable()->default(null);
         });
     }
 

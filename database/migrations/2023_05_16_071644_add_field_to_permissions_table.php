@@ -13,10 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('permissions', function (Blueprint $table) {
-            $table->integer('parent_id')->nullable()->default(null)->after('guard_name');
-            $table->string('label')->nullable()->default(null)->after('parent_id');
-        });
+        // Schema::table('permissions', function (Blueprint $table) {
+        //     $table->integer('parent_id')->nullable()->default(null);
+        //     $table->string('label')->nullable()->default(null);
+        // });
     }
 
     /**
@@ -26,9 +26,9 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('permissions', function (Blueprint $table) {
-            $table->dropColumn('parent_id');
-            $table->dropColumn('label');
-        });
+        // Schema::table('permissions', function (Blueprint $table) {
+        //     $table->dropColumn('parent_id');
+        //     $table->dropColumn('label');
+        // });
     }
 };

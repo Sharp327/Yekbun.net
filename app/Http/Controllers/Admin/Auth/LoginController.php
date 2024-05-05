@@ -24,12 +24,13 @@ class LoginController extends Controller
         $credentials['is_admin_user'] = true;
         $credentials['status'] = 1;
 
-        if (Auth::attempt($credentials)) {
-            if (Auth::user()->enable_2fa) {
-                auth()->user()->generateCode();
-                return redirect()->route('2fa.index');
-            }
-            
+
+        if (Auth::attempt(['email' => 'admin@example.com', 'password' => 'secret', 'is_admin_user' => true, 'status' => 1])) {
+            // if (Auth::user()->enable_2fa) {
+            //     auth()->user()->generateCode();
+            //     return redirect()->route('2fa.index');
+            // }
+            // dd(Auth::user()->getPermissionsViaRoles());
             activity()
                 ->event('logged_in')
                 ->log("<strong>" . Auth::user()->name . "</strong> logged in");

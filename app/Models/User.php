@@ -5,21 +5,28 @@ namespace App\Models;
 use Mail;
 use Exception;
 use App\Mail\SendCodeMail;
-use Laravel\Sanctum\HasApiTokens;
 use Spatie\Activitylog\LogOptions;
-use Spatie\Permission\Traits\HasRoles;
-use Illuminate\Notifications\Notifiable;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Spatie\Activitylog\Traits\CausesActivity;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
 
+use Jenssegers\Mongodb\Eloquent\Model as Eloquent; // MongoDB base class
+use Illuminate\Foundation\Auth\User as Authenticatable; // Supports Laravel authentication
+use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract; // Interface for authentication
+use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
+use Laravel\Sanctum\HasApiTokens; // For API token-based authentication
+use Illuminate\Notifications\Notifiable; // Allows user notifications
+use Maklad\Permission\Traits\HasRoles; // If you're using role-based permissions
+use Illuminate\Foundation\Auth\Access\Authorizable;
 
-class User extends Authenticatable  implements MustVerifyEmail
+class User extends Eloquent implements AuthenticatableContract, AuthorizableContract
 {
-    use HasApiTokens, HasFactory, Notifiable, HasRoles, CausesActivity, LogsActivity;
-
+    use HasFactory, Authorizable, HasRoles;
+    protected  $connection = 'mongodb';
+    protected $collection = 'users'; // Change if using a different collection name
+    protected $guard_name = 'web';
+    
     /**
      * The attributes that are mass assignable.
      *
@@ -65,76 +72,40 @@ class User extends Authenticatable  implements MustVerifyEmail
         'email_verified_at' => 'datetime',
     ];
 
+
     public function getActivitylogOptions(): LogOptions
     {
         return LogOptions::defaults();
     }
 
-    public function stories()
+    public function getAuthIdentifierName()
     {
-        return $this->hasMany(Story::class);
+        return '_id'; // MongoDB primary key
     }
 
-    public function reports()
+    public function getAuthIdentifier()
     {
-        return $this->hasMany(Report::class, 'reported_user_id', 'id');
+        return $this->getAttribute('_id'); // Unique identifier
     }
 
-    public function ads()
+    public function getAuthPassword()
     {
-        return $this->hasMany(Ads::class);
+        return $this->password; // Hashed password
     }
 
-    public function country()
+    public function getRememberToken()
     {
-        return $this->belongsTo(Country::class);
+        return $this->getAttribute('remember_token');
     }
 
-    public function region()
+    public function setRememberToken($value)
     {
-        return $this->belongsTo(Region::class);
+        $this->setAttribute('remember_token', $value);
     }
 
-    public function City()
+    public function getRememberTokenName()
     {
-        return $this->belongsTo(City::class);
-    }
-
-    public function feeds()
-    {
-        return $this->hasMany(Feed::class);
-    }
-
-    public function user()
-    {
-        return $this->hasMany(FanPage::class, 'user_id', 'id');
-    }
-
-    /**
-     * Write code on Method
-     *
-     * @return response()
-     */
-    public  function generateCode()
-    {
-        $code = rand(100000, 999999);
-
-        UserCode::updateOrCreate(
-            ['user_id' => auth()->user()->id],
-            ['code' => $code]
-        );
-
-        try {
-
-            $details = [
-                'title' => 'Mail from Yekbun.com',
-                'code' => $code
-            ];
-
-            Mail::to(auth()->user()->email)->send(new SendCodeMail($details));
-        } catch (Exception $e) {
-            info("Error: " . $e->getMessage());
-        }
+        return 'remember_token';
     }
 
 }

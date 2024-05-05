@@ -237,7 +237,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input" checked="">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['friends_allow_request'] ? 'checked' : ''}} data-permission="friends_allow_request">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -256,9 +256,9 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <!-- <hr class="m-0"> -->
                         <div class="d-flex">
                             <div class="up-down-group">
-                                <i class="bx bx-chevron-down bx-xs"></i>
-                                <span>5</span>
-                                <i class="bx bx-chevron-up bx-xs"></i>
+                                <i class="bx bx-chevron-down bx-xs down-icon" data-permission="friends_total_friends"></i>
+                                <span>{{$permissions["value"]['friends_total_friends']}}</span>
+                                <i class="bx bx-chevron-up bx-xs up-icon" data-permission="friends_total_friends"></i>
                             </div>
                         </div>
                     </div>
@@ -272,9 +272,9 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <!-- <hr class="m-0"> -->
                         <div class="d-flex">
                             <div class="up-down-group">
-                                <i class="bx bx-chevron-down bx-xs"></i>
-                                <span>5</span>
-                                <i class="bx bx-chevron-up bx-xs"></i>
+                                <i class="bx bx-chevron-down bx-xs down-icon" data-permission="friends_total_family"></i>
+                                <span>{{$permissions["value"]['friends_total_family']}}</span>
+                                <i class="bx bx-chevron-up bx-xs up-icon" data-permission="friends_total_family"></i>
                             </div>
                         </div>
                     </div>
@@ -323,7 +323,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                 </div>
                                 <div class="col-2 text-end mt-1">
                                     <label class="switch me-0">
-                                    <input type="checkbox" class="switch-input">
+                                    <input type="checkbox" class="switch-input" {{$permissions["value"]['storage_allow_total'] ? 'checked' : ''}} data-permission="storage_allow_total">
                                     <span class="switch-toggle-slider">
 
                                     </span>
@@ -338,11 +338,11 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                             <div class="row">
                                 <div class="col-md-10">
                                     <div class="card-body bg-white rounded-0" style="padding: 30px; padding-bottom: 40px">
-                                        <div id="slider-pips1" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
+                                        <div id="slider-pips1" start-value="{{$permissions['value']['storage_total_amount']}}" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="MB" value="100 MB" disabled id="slider-pips1-input" class="form-control text-center">
+                                    <input type="text" unit="MB" value="{{$permissions['value']['storage_total_amount']}} MB" disabled id="slider-pips1-input" data-permission="storage_total_amount" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -361,7 +361,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                 </div>
                                 <div class="col-2 text-end mt-1">
                                     <label class="switch me-0">
-                                    <input type="checkbox" class="switch-input">
+                                    <input type="checkbox" class="switch-input" {{$permissions["value"]['storage_alert'] ? 'checked' : ''}} data-permission="storage_alert">
                                     <span class="switch-toggle-slider">
 
                                     </span>
@@ -377,11 +377,11 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                             <div class="row">
                                 <div class="col-md-10">
                                     <div class="card-body bg-white rounded-0" style="padding: 30px; padding-bottom: 40px">
-                                        <div id="slider-pips2" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
+                                        <div id="slider-pips2" start-value="{{$permissions['value']['storage_alert_amount']}}" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="%" value="10 %" disabled id="slider-pips2-input" class="form-control text-center">
+                                    <input type="text" unit="%" value="{{$permissions['value']['storage_alert_amount']}} %" disabled id="slider-pips2-input" data-permission="storage_alert_amount" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -438,7 +438,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input" checked="">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['feed_allow_feeds'] ? 'checked' : ''}} data-permission="feed_allow_feeds">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -462,7 +462,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['feed_options'] ? 'checked' : ''}} data-permission="feed_options">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -486,7 +486,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['feed_video_cam'] ? 'checked' : ''}} data-permission="feed_video_cam">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -510,7 +510,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['feed_share_images'] ? 'checked' : ''}} data-permission="feed_share_images">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -534,7 +534,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['feed_text_comments'] ? 'checked' : ''}} data-permission="feed_text_comments">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -558,7 +558,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['feed_like_button'] ? 'checked' : ''}} data-permission="feed_like_button">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -582,7 +582,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['feed_share_comments'] ? 'checked' : ''}} data-permission="feed_share_comments">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -605,7 +605,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                 </div>
                                 <div class="col-2 text-end mt-1">
                                     <label class="switch me-0">
-                                    <input type="checkbox" class="switch-input">
+                                    <input type="checkbox" class="switch-input" {{$permissions["value"]['feed_voice_comments'] ? 'checked' : ''}} data-permission="feed_voice_comments">
                                     <span class="switch-toggle-slider">
 
                                     </span>
@@ -620,11 +620,11 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                             <div class="row">
                                 <div class="col-md-10">
                                     <div class="card-body bg-white rounded-0" style="padding: 30px; padding-bottom: 40px">
-                                        <div id="slider-pips3" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
+                                        <div id="slider-pips3" start-value="{{$permissions['value']['feed_voice_record_time']}}" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="Sec" value="10 Sec" disabled id="slider-pips3-input" class="form-control text-center">
+                                    <input type="text" unit="Sec" value="{{$permissions['value']['feed_voice_record_time']}} Sec" disabled id="slider-pips3-input" data-permission="feed_voice_record_time" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -643,7 +643,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                 </div>
                                 <div class="col-2 text-end mt-1">
                                     <label class="switch me-0">
-                                    <input type="checkbox" class="switch-input">
+                                    <input type="checkbox" class="switch-input" {{$permissions["value"]['feed_share_videos'] ? 'checked' : ''}} data-permission="feed_share_videos">
                                     <span class="switch-toggle-slider">
 
                                     </span>
@@ -658,11 +658,11 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                             <div class="row">
                                 <div class="col-md-10">
                                     <div class="card-body bg-white rounded-0" style="padding: 30px; padding-bottom: 40px">
-                                        <div id="slider-pips4" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
+                                        <div id="slider-pips4" start-value="{{$permissions['value']['feed_share_video_amount']}}" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="MB" value="10 MB" disabled id="slider-pips4-input" class="form-control text-center">
+                                    <input type="text" unit="MB" value="{{$permissions['value']['feed_share_video_amount']}} MB" disabled id="slider-pips4-input" data-permission="feed_share_video_amount" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -710,7 +710,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input" checked="">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['wishes_allow_wishes'] ? 'checked' : ''}} data-permission="wishes_allow_wishes">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -733,9 +733,9 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <!-- <hr class="m-0"> -->
                         <div class="d-flex">
                             <div class="up-down-group">
-                                <i class="bx bx-chevron-down bx-xs"></i>
-                                <span>5</span>
-                                <i class="bx bx-chevron-up bx-xs"></i>
+                                <i class="bx bx-chevron-down bx-xs down-icon" data-permission="wishes_daily_share"></i>
+                                <span>{{$permissions["value"]['wishes_daily_share']}}</span>
+                                <i class="bx bx-chevron-up bx-xs up-icon" data-permission="wishes_daily_share"></i>
                             </div>
                         </div>
                     </div>
@@ -754,7 +754,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['wishes_text_comments'] ? 'checked' : ''}} data-permission="wishes_text_comments">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -778,7 +778,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['wishes_like_button'] ? 'checked' : ''}} data-permission="wishes_like_button">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -802,7 +802,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['wishes_share_comments'] ? 'checked' : ''}} data-permission="wishes_share_comments">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -825,7 +825,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                 </div>
                                 <div class="col-2 text-end mt-1">
                                     <label class="switch me-0">
-                                    <input type="checkbox" class="switch-input">
+                                    <input type="checkbox" class="switch-input" {{$permissions["value"]['wishes_voice_comments'] ? 'checked' : ''}} data-permission="wishes_voice_comments">
                                     <span class="switch-toggle-slider">
 
                                     </span>
@@ -840,11 +840,11 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                             <div class="row">
                                 <div class="col-md-10">
                                     <div class="card-body bg-white rounded-0" style="padding: 30px; padding-bottom: 40px">
-                                        <div id="slider-pips5" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
+                                        <div id="slider-pips5" start-value="{{$permissions['value']['wishes_voice_record_time']}}" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="Sec" value="10 Sec" disabled id="slider-pips5-input" class="form-control text-center">
+                                    <input type="text" unit="Sec" value="{{$permissions['value']['wishes_voice_record_time']}} Sec" disabled id="slider-pips5-input" data-permission="wishes_voice_record_time" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -892,7 +892,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input" checked="">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['history_allow_history'] ? 'checked' : ''}} data-permission="history_allow_history">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -911,9 +911,9 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <!-- <hr class="m-0"> -->
                         <div class="d-flex">
                             <div class="up-down-group">
-                                <i class="bx bx-chevron-down bx-xs"></i>
-                                <span>5</span>
-                                <i class="bx bx-chevron-up bx-xs"></i>
+                                <i class="bx bx-chevron-down bx-xs down-icon" data-permission="history_daily_share"></i>
+                                <span>{{$permissions["value"]['history_daily_share']}}</span>
+                                <i class="bx bx-chevron-up bx-xs up-icon" data-permission="history_daily_share"></i>
                             </div>
                         </div>
                     </div>
@@ -932,7 +932,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['history_text_comments'] ? 'checked' : ''}} data-permission="history_text_comments">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -956,7 +956,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['history_like_button'] ? 'checked' : ''}} data-permission="history_like_button">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -980,7 +980,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['history_share_comments'] ? 'checked' : ''}} data-permission="history_share_comments">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1003,7 +1003,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                 </div>
                                 <div class="col-2 text-end mt-1">
                                     <label class="switch me-0">
-                                    <input type="checkbox" class="switch-input">
+                                    <input type="checkbox" class="switch-input" {{$permissions["value"]['history_voice_comments'] ? 'checked' : ''}} data-permission="history_voice_comments">
                                     <span class="switch-toggle-slider">
 
                                     </span>
@@ -1018,11 +1018,11 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                             <div class="row">
                                 <div class="col-md-10">
                                     <div class="card-body bg-white rounded-0" style="padding: 30px; padding-bottom: 40px">
-                                        <div id="slider-pips6" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
+                                        <div id="slider-pips6" start-value="{{$permissions['value']['history_voice_record_time']}}" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="Sec" value="10 Sec" disabled id="slider-pips6-input" class="form-control text-center">
+                                    <input type="text" unit="Sec" value="{{$permissions['value']['history_voice_record_time']}} Sec" disabled id="slider-pips6-input" data-permission="history_voice_record_time" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -1070,7 +1070,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input" checked="">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['vote_allow_vote'] ? 'checked' : ''}} data-permission="vote_allow_vote">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1131,7 +1131,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input" checked="">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['music_allow_music'] ? 'checked' : ''}} data-permission="music_allow_music">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1151,7 +1151,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input" checked="">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['music_share_songs'] ? 'checked' : ''}} data-permission="music_share_songs">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1171,7 +1171,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input" checked="">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['music_create_playlist'] ? 'checked' : ''}} data-permission="music_create_playlist">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1190,9 +1190,9 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <!-- <hr class="m-0"> -->
                         <div class="d-flex">
                             <div class="up-down-group">
-                                <i class="bx bx-chevron-down bx-xs"></i>
-                                <span>5</span>
-                                <i class="bx bx-chevron-up bx-xs"></i>
+                                <i class="bx bx-chevron-down bx-xs down-icon" data-permission="music_allowed_playlist"></i>
+                                <span>{{$permissions["value"]['music_allowed_playlist']}}</span>
+                                <i class="bx bx-chevron-up bx-xs up-icon" data-permission="music_allowed_playlist"></i>
                             </div>
                         </div>
                     </div>
@@ -1207,7 +1207,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input" checked="">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['music_buy_songs'] ? 'checked' : ''}} data-permission="music_buy_songs">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1226,9 +1226,9 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <!-- <hr class="m-0"> -->
                         <div class="d-flex">
                             <div class="up-down-group">
-                                <i class="bx bx-chevron-down bx-xs"></i>
-                                <span>5</span>
-                                <i class="bx bx-chevron-up bx-xs"></i>
+                                <i class="bx bx-chevron-down bx-xs down-icon" data-permission="music_daily_songs"></i>
+                                <span>{{$permissions["value"]['music_daily_songs']}}</span>
+                                <i class="bx bx-chevron-up bx-xs up-icon" data-permission="music_daily_songs"></i>
                             </div>
                         </div>
                     </div>
@@ -1243,7 +1243,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input" checked="">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['music_favorite_songs'] ? 'checked' : ''}} data-permission="music_favorite_songs">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1263,7 +1263,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input" checked="">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['music_favorite_artist'] ? 'checked' : ''}} data-permission="music_favorite_artist">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1282,9 +1282,9 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <!-- <hr class="m-0"> -->
                         <div class="d-flex">
                             <div class="up-down-group">
-                                <i class="bx bx-chevron-down bx-xs"></i>
-                                <span>5</span>
-                                <i class="bx bx-chevron-up bx-xs"></i>
+                                <i class="bx bx-chevron-down bx-xs down-icon" data-permission="music_playlist_price_amount"></i>
+                                <span>{{$permissions["value"]['music_playlist_price_amount']}}</span>
+                                <i class="bx bx-chevron-up bx-xs up-icon" data-permission="music_playlist_price_amount"></i>
                             </div>
                             <div class="up-down-group">
                                 <i class="bx bx-chevron-down bx-xs"></i>
@@ -1316,11 +1316,11 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                 <div class="content-group">
                     <div class="d-flex justify-content-start align-items-center">
                         <div class="avatar-wrapper">
-                            <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/votesection.svg')}}"
+                            <div class="avatar avatar-sm me-3"><img src="{{asset('assets/userrole/icons/videosection.svg')}}"
                                     alt="Avatar"></div>
                         </div>
                         <div class="d-flex flex-column genos-font">
-                            <span class="fw-semibold">Vote Section</span>
+                            <span class="fw-semibold">Video Section</span>
                             <small class="text-muted">Allowed Permissions for Videos</small>
                         </div>
                     </div>
@@ -1336,7 +1336,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input" checked="">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['video_allow_video'] ? 'checked' : ''}} data-permission="video_allow_video">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1356,7 +1356,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input" checked="">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['video_create_playlist'] ? 'checked' : ''}} data-permission="video_create_playlist">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1375,9 +1375,9 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <!-- <hr class="m-0"> -->
                         <div class="d-flex">
                             <div class="up-down-group">
-                                <i class="bx bx-chevron-down bx-xs"></i>
-                                <span>5</span>
-                                <i class="bx bx-chevron-up bx-xs"></i>
+                                <i class="bx bx-chevron-down bx-xs down-icon" data-permission="video_allowed_playlist"></i>
+                                <span>{{$permissions["value"]['video_allowed_playlist']}}</span>
+                                <i class="bx bx-chevron-up bx-xs up-icon" data-permission="video_allowed_playlist"></i>
                             </div>
                         </div>
                     </div>
@@ -1391,9 +1391,9 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <!-- <hr class="m-0"> -->
                         <div class="d-flex">
                             <div class="up-down-group">
-                                <i class="bx bx-chevron-down bx-xs"></i>
-                                <span>5</span>
-                                <i class="bx bx-chevron-up bx-xs"></i>
+                                <i class="bx bx-chevron-down bx-xs down-icon" data-permission="video_daily_videos"></i>
+                                <span>{{$permissions["value"]['video_daily_videos']}}</span>
+                                <i class="bx bx-chevron-up bx-xs up-icon" data-permission="video_daily_videos"></i>
                             </div>
                         </div>
                     </div>
@@ -1407,9 +1407,9 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <!-- <hr class="m-0"> -->
                         <div class="d-flex">
                             <div class="up-down-group">
-                                <i class="bx bx-chevron-down bx-xs"></i>
-                                <span>5</span>
-                                <i class="bx bx-chevron-up bx-xs"></i>
+                                <i class="bx bx-chevron-down bx-xs down-icon" data-permission="video_playlist_price_amount"></i>
+                                <span>{{$permissions["value"]['video_playlist_price_amount']}}</span>
+                                <i class="bx bx-chevron-up bx-xs up-icon" data-permission="video_playlist_price_amount"></i>
                             </div>
                             <div class="up-down-group">
                                 <i class="bx bx-chevron-down bx-xs"></i>
@@ -1433,7 +1433,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['video_text_comments'] ? 'checked' : ''}} data-permission="video_text_comments">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1457,7 +1457,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['video_like_button'] ? 'checked' : ''}} data-permission="video_like_button">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1481,7 +1481,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['video_share_comments'] ? 'checked' : ''}} data-permission="video_share_comments">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1504,7 +1504,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                 </div>
                                 <div class="col-2 text-end mt-1">
                                     <label class="switch me-0">
-                                    <input type="checkbox" class="switch-input">
+                                    <input type="checkbox" class="switch-input" {{$permissions["value"]['video_voice_comments'] ? 'checked' : ''}} data-permission="video_voice_comments">
                                     <span class="switch-toggle-slider">
 
                                     </span>
@@ -1519,11 +1519,11 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                             <div class="row">
                                 <div class="col-md-10">
                                     <div class="card-body bg-white rounded-0" style="padding: 30px; padding-bottom: 40px">
-                                        <div id="slider-pips7" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
+                                        <div id="slider-pips7" start-value="{{$permissions['value']['video_voice_record_time']}}" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="Sec" value="10 Sec" disabled id="slider-pips7-input" class="form-control text-center">
+                                    <input type="text" unit="Sec" value="{{$permissions['value']['video_voice_record_time']}} Sec" disabled id="slider-pips7-input" data-permission="video_voice_record_time" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -1571,7 +1571,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input" checked="">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['liveStream_allow_liveStream'] ? 'checked' : ''}} data-permission="liveStream_allow_liveStream">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1603,11 +1603,11 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                             <div class="row">
                                 <div class="col-md-10">
                                     <div class="card-body bg-white rounded-0" style="padding: 30px; padding-bottom: 40px">
-                                        <div id="slider-pips8" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
+                                        <div id="slider-pips8" start-value="{{$permissions['value']['liveStream_record_time']}}" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="min" value="10 min" disabled id="slider-pips8-input" class="form-control text-center">
+                                    <input type="text" unit="min" value="{{$permissions['value']['liveStream_record_time']}} min" disabled id="slider-pips8-input" data-permission="liveStream_record_time" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -1623,7 +1623,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input" checked="">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['liveStream_invent_friends'] ? 'checked' : ''}} data-permission="liveStream_invent_friends">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1631,9 +1631,9 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                 </label>
                             </div>
                             <div class="up-down-group">
-                                <i class="bx bx-chevron-down bx-xs"></i>
-                                <span>5</span>
-                                <i class="bx bx-chevron-up bx-xs"></i>
+                                <i class="bx bx-chevron-down bx-xs down-icon" data-permission="liveStream_invent_friends_amount"></i>
+                                <span>{{$permissions["value"]['liveStream_invent_friends_amount']}}</span>
+                                <i class="bx bx-chevron-up bx-xs up-icon" data-permission="liveStream_invent_friends_amount"></i>
                             </div>
                         </div>
                     </div>
@@ -1648,7 +1648,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input" checked="">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['liveStream_invent_family'] ? 'checked' : ''}} data-permission="liveStream_invent_family">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1656,9 +1656,9 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                 </label>
                             </div>
                             <div class="up-down-group">
-                                <i class="bx bx-chevron-down bx-xs"></i>
-                                <span>5</span>
-                                <i class="bx bx-chevron-up bx-xs"></i>
+                                <i class="bx bx-chevron-down bx-xs down-icon" data-permission="liveStream_invent_family_amount"></i>
+                                <span>{{$permissions["value"]['liveStream_invent_family_amount']}}</span>
+                                <i class="bx bx-chevron-up bx-xs up-icon" data-permission="liveStream_invent_family_amount"></i>
                             </div>
                         </div>
                     </div>
@@ -1677,7 +1677,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['liveStream_text_comments'] ? 'checked' : ''}} data-permission="liveStream_text_comments">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1701,7 +1701,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['liveStream_like_button'] ? 'checked' : ''}} data-permission="liveStream_like_button">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1725,7 +1725,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['liveStream_share_comments'] ? 'checked' : ''}} data-permission="liveStream_share_comments">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1748,7 +1748,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                 </div>
                                 <div class="col-2 text-end mt-1">
                                     <label class="switch me-0">
-                                    <input type="checkbox" class="switch-input">
+                                    <input type="checkbox" class="switch-input" {{$permissions["value"]['liveStream_voice_comments'] ? 'checked' : ''}} data-permission="liveStream_voice_comments">
                                     <span class="switch-toggle-slider">
 
                                     </span>
@@ -1763,11 +1763,11 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                             <div class="row">
                                 <div class="col-md-10">
                                     <div class="card-body bg-white rounded-0" style="padding: 30px; padding-bottom: 40px">
-                                        <div id="slider-pips9" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
+                                        <div id="slider-pips9" start-value="{{$permissions['value']['liveStream_voice_record_time']}}" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="Sec" value="10 Sec" disabled id="slider-pips9-input" class="form-control text-center">
+                                    <input type="text" unit="Sec" value="{{$permissions['value']['liveStream_voice_record_time']}} Sec" disabled id="slider-pips9-input" data-permission="liveStream_voice_record_time" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -1815,7 +1815,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input" checked="">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['interviews_allow_interviews'] ? 'checked' : ''}} data-permission="interviews_allow_interviews">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1847,11 +1847,11 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                             <div class="row">
                                 <div class="col-md-10">
                                     <div class="card-body bg-white rounded-0" style="padding: 30px; padding-bottom: 40px">
-                                        <div id="slider-pips10" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
+                                        <div id="slider-pips10" start-value="{{$permissions['value']['interviews_record_time']}}" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="min" value="10 min" disabled id="slider-pips10-input" class="form-control text-center">
+                                    <input type="text" unit="min" value="{{$permissions['value']['interviews_record_time']}} min" disabled id="slider-pips10-input" data-permission="interviews_record_time" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -1866,9 +1866,9 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <!-- <hr class="m-0"> -->
                         <div class="d-flex">
                             <div class="up-down-group">
-                                <i class="bx bx-chevron-down bx-xs"></i>
-                                <span>5</span>
-                                <i class="bx bx-chevron-up bx-xs"></i>
+                                <i class="bx bx-chevron-down bx-xs down-icon" data-permission="interviews_allowed_friends"></i>
+                                <span>{{$permissions["value"]['interviews_allowed_friends']}}</span>
+                                <i class="bx bx-chevron-up bx-xs up-icon" data-permission="interviews_allowed_friends"></i>
                             </div>
                         </div>
                     </div>
@@ -1887,7 +1887,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['interviews_text_comments'] ? 'checked' : ''}} data-permission="interviews_text_comments">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1911,7 +1911,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['interviews_like_button'] ? 'checked' : ''}} data-permission="interviews_like_button">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1935,7 +1935,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['interviews_share_comments'] ? 'checked' : ''}} data-permission="interviews_share_comments">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -1958,7 +1958,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                 </div>
                                 <div class="col-2 text-end mt-1">
                                     <label class="switch me-0">
-                                    <input type="checkbox" class="switch-input">
+                                    <input type="checkbox" class="switch-input" {{$permissions["value"]['interviews_voice_comments'] ? 'checked' : ''}} data-permission="interviews_voice_comments">
                                     <span class="switch-toggle-slider">
 
                                     </span>
@@ -1973,11 +1973,11 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                             <div class="row">
                                 <div class="col-md-10">
                                     <div class="card-body bg-white rounded-0" style="padding: 30px; padding-bottom: 40px">
-                                        <div id="slider-pips11" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
+                                        <div id="slider-pips11" start-value="{{$permissions['value']['interviews_voice_record_time']}}" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="Sec" value="10 Sec" disabled id="slider-pips11-input" class="form-control text-center">
+                                    <input type="text" unit="Sec" value="{{$permissions['value']['interviews_voice_record_time']}} Sec" disabled id="slider-pips11-input" data-permission="interviews_voice_record_time" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -2025,7 +2025,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input" checked="">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['liveChannels_allow_liveChannels'] ? 'checked' : ''}} data-permission="liveChannels_allow_liveChannels">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -2044,9 +2044,9 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <!-- <hr class="m-0"> -->
                         <div class="d-flex">
                             <div class="up-down-group">
-                                <i class="bx bx-chevron-down bx-xs"></i>
-                                <span>5</span>
-                                <i class="bx bx-chevron-up bx-xs"></i>
+                                <i class="bx bx-chevron-down bx-xs down-icon" data-permission="liveChannels_allowed_friends"></i>
+                                <span>{{$permissions["value"]['liveChannels_allowed_friends']}}</span>
+                                <i class="bx bx-chevron-up bx-xs up-icon" data-permission="liveChannels_allowed_friends"></i>
                             </div>
                         </div>
                     </div>
@@ -2065,7 +2065,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['liveChannels_text_comments'] ? 'checked' : ''}} data-permission="liveChannels_text_comments">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -2089,7 +2089,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['liveChannels_like_button'] ? 'checked' : ''}} data-permission="liveChannels_like_button">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -2113,7 +2113,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['liveChannels_share_comments'] ? 'checked' : ''}} data-permission="liveChannels_share_comments">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -2136,7 +2136,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                 </div>
                                 <div class="col-2 text-end mt-1">
                                     <label class="switch me-0">
-                                    <input type="checkbox" class="switch-input">
+                                    <input type="checkbox" class="switch-input" {{$permissions["value"]['liveChannels_voice_comments'] ? 'checked' : ''}} data-permission="liveChannels_voice_comments">
                                     <span class="switch-toggle-slider">
 
                                     </span>
@@ -2151,11 +2151,11 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                             <div class="row">
                                 <div class="col-md-10">
                                     <div class="card-body bg-white rounded-0" style="padding: 30px; padding-bottom: 40px">
-                                        <div id="slider-pips12" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
+                                        <div id="slider-pips12" start-value="{{$permissions['value']['liveChannels_voice_record_time']}}" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="Sec" value="10 Sec" disabled id="slider-pips12-input" class="form-control text-center">
+                                    <input type="text" unit="Sec" value="{{$permissions['value']['liveChannels_voice_record_time']}} Sec" disabled id="slider-pips12-input" data-permission="liveChannels_voice_record_time" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -2212,7 +2212,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input" checked="">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['chat_allow_chat'] ? 'checked' : ''}} data-permission="chat_allow_chat">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -2235,7 +2235,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                 </div>
                                 <div class="col-2 text-end mt-1">
                                     <label class="switch me-0">
-                                    <input type="checkbox" class="switch-input">
+                                    <input type="checkbox" class="switch-input" {{$permissions["value"]['chat_voice_messages'] ? 'checked' : ''}} data-permission="chat_voice_messages">
                                     <span class="switch-toggle-slider">
 
                                     </span>
@@ -2250,11 +2250,11 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                             <div class="row">
                                 <div class="col-md-10">
                                     <div class="card-body bg-white rounded-0" style="padding: 30px; padding-bottom: 40px">
-                                        <div id="slider-pips13" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
+                                        <div id="slider-pips13" start-value="{{$permissions['value']['chat_voice_record_time']}}" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="Sec" value="10 Sec" disabled id="slider-pips13-input" class="form-control text-center">
+                                    <input type="text" unit="Sec" value="{{$permissions['value']['chat_voice_record_time']}} Sec" disabled id="slider-pips13-input" data-permission="chat_voice_record_time" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -2270,7 +2270,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['chat_text_message'] ? 'checked' : ''}} data-permission="chat_text_message">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -2290,7 +2290,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['chat_share_files'] ? 'checked' : ''}} data-permission="chat_share_files">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -2310,7 +2310,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['chat_share_location'] ? 'checked' : ''}} data-permission="chat_share_location">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -2330,7 +2330,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['chat_create_groups_allow'] ? 'checked' : ''}} data-permission="chat_create_groups_allow">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -2338,9 +2338,9 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                 </label>
                             </div>
                             <div class="up-down-group">
-                                <i class="bx bx-chevron-down bx-xs"></i>
-                                <span>5</span>
-                                <i class="bx bx-chevron-up bx-xs"></i>
+                                <i class="bx bx-chevron-down bx-xs down-icon" data-permission="chat_create_groups_amount"></i>
+                                <span>{{$permissions["value"]['chat_create_groups_amount']}}</span>
+                                <i class="bx bx-chevron-up bx-xs up-icon" data-permission="chat_create_groups_amount"></i>
                             </div>
                         </div>
                     </div>
@@ -2355,7 +2355,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                         <div class="d-flex">
                             <div>
                                 <label class="switch me-0">
-                                  <input type="checkbox" class="switch-input">
+                                  <input type="checkbox" class="switch-input" {{$permissions["value"]['chat_join_group'] ? 'checked' : ''}} data-permission="chat_join_group">
                                   <span class="switch-toggle-slider">
                                     
                                   </span>
@@ -2378,7 +2378,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                 </div>
                                 <div class="col-2 text-end mt-1">
                                     <label class="switch me-0">
-                                    <input type="checkbox" class="switch-input">
+                                    <input type="checkbox" class="switch-input" {{$permissions["value"]['chat_voice_calls'] ? 'checked' : ''}} data-permission="chat_voice_calls">
                                     <span class="switch-toggle-slider">
 
                                     </span>
@@ -2399,7 +2399,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                 </div>
                                 <div class="col-2 text-end mt-1">
                                     <label class="switch me-0">
-                                    <input type="checkbox" class="switch-input">
+                                    <input type="checkbox" class="switch-input" {{$permissions["value"]['chat_voice_group_calls'] ? 'checked' : ''}} data-permission="chat_voice_group_calls">
                                     <span class="switch-toggle-slider">
 
                                     </span>
@@ -2420,7 +2420,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                 </div>
                                 <div class="col-2 text-end mt-1">
                                     <label class="switch me-0">
-                                    <input type="checkbox" class="switch-input">
+                                    <input type="checkbox" class="switch-input" {{$permissions["value"]['chat_voice_join_call'] ? 'checked' : ''}} data-permission="chat_voice_join_call">
                                     <span class="switch-toggle-slider">
 
                                     </span>
@@ -2435,11 +2435,11 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                             <div class="row">
                                 <div class="col-md-10">
                                     <div class="card-body bg-white rounded-0" style="padding: 30px; padding-bottom: 40px">
-                                        <div id="slider-pips14" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
+                                        <div id="slider-pips14" start-value="{{$permissions['value']['chat_voice_call_time']}}" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="Sec" value="10 Sec" disabled id="slider-pips14-input" class="form-control text-center">
+                                    <input type="text" unit="Sec" value="{{$permissions['value']['chat_voice_call_time']}} Sec" disabled id="slider-pips14-input" data-permission="chat_voice_call_time" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -2458,7 +2458,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                 </div>
                                 <div class="col-2 text-end mt-1">
                                     <label class="switch me-0">
-                                    <input type="checkbox" class="switch-input">
+                                    <input type="checkbox" class="switch-input" {{$permissions["value"]['chat_video_calls'] ? 'checked' : ''}} data-permission="chat_video_calls">
                                     <span class="switch-toggle-slider">
 
                                     </span>
@@ -2479,7 +2479,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                 </div>
                                 <div class="col-2 text-end mt-1">
                                     <label class="switch me-0">
-                                    <input type="checkbox" class="switch-input">
+                                    <input type="checkbox" class="switch-input" {{$permissions["value"]['chat_video_group_calls'] ? 'checked' : ''}} data-permission="chat_video_group_calls">
                                     <span class="switch-toggle-slider">
 
                                     </span>
@@ -2500,7 +2500,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                                 </div>
                                 <div class="col-2 text-end mt-1">
                                     <label class="switch me-0">
-                                    <input type="checkbox" class="switch-input">
+                                    <input type="checkbox" class="switch-input" {{$permissions["value"]['chat_video_join_call'] ? 'checked' : ''}} data-permission="chat_video_join_call">
                                     <span class="switch-toggle-slider">
 
                                     </span>
@@ -2515,11 +2515,11 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                             <div class="row">
                                 <div class="col-md-10">
                                     <div class="card-body bg-white rounded-0" style="padding: 30px; padding-bottom: 40px">
-                                        <div id="slider-pips15" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
+                                        <div id="slider-pips15" start-value="{{$permissions['value']['chat_video_call_time']}}" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; height:80px">
-                                    <input type="text" unit="Sec" value="10 Sec" disabled id="slider-pips15-input" class="form-control text-center">
+                                    <input type="text" unit="Sec" value="{{$permissions['value']['chat_video_call_time']}} Sec" disabled id="slider-pips15-input" data-permission="chat_video_call_time" class="form-control text-center">
                                 </div>
                             </div>
                         </div>
@@ -2533,6 +2533,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
     </div>
 </div>
 
+@section('page-script')
 <script>
     function confirmSettingUpdate(event) {
         event.preventDefault();
@@ -2584,6 +2585,27 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
         });
     }
 
+    function updatePermission(key, newValue, valueType) {
+        $.ajax({
+            url: '{{ route("settings.user-roles.update.permissions") }}',
+            method: 'POST',
+            data: {
+                _token: '{{ csrf_token() }}',
+                key: key,
+                value: newValue,
+                userLevel: '{{ $userLevel }}',
+                valueType: valueType
+            },
+            success: function(response) {
+                console.log('Permission updated successfully');
+            },
+            error: function(error) {
+                console.error('Error updating permission', error);
+            }
+        });
+    }
+
+    
     document.addEventListener('DOMContentLoaded', function() {
         var sliders = $('.slider');
         var slider = [15];
@@ -2604,7 +2626,7 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
                     '90%': [  90 ],
                     'max': [ 100 ],
                 },
-                start: 10,
+                start: element.getAttribute('start-value'),
                 step: 1,
                 pips: {
                     mode: 'range',
@@ -2616,10 +2638,45 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
             (function(currentIndex) {
                 slider[currentIndex].on('change', function(values, handle) {
                     sliderPipsInput[currentIndex].value = values[handle] + " " + sliderPipsInput[currentIndex].getAttribute('unit');
+                    updatePermission(sliderPipsInput[currentIndex].getAttribute('data-permission'), values[handle], 'float');
                 });
             })(i);
         }
     })
+
+    $(document).ready(function() {
+       
+        $(document).on('change', '.switch-input', function() {
+            var $input = $(this);
+            var permissionKey = $input.data('permission');
+            var isChecked = $input.is(':checked');
+            updatePermission(permissionKey, isChecked, 'boolean');
+        });
+
+        $('.down-icon').on('click', function() {
+            var $counterSpan = $(this).next('span'); // Find the span
+            var currentValue = parseInt($counterSpan.text(), 10); // Current value
+            var newValue = Math.max(currentValue - 1, 0); // Decrement, with limit 0
+            $counterSpan.text(newValue); // Update the span
+            console.log(newValue);
+
+            // Call the API to update MongoDB
+            updatePermission($(this).data('permission'), newValue, 'int'); // Use appropriate key
+        });
+
+        $('.up-icon').on('click', function() {
+            var $counterSpan = $(this).prev('span'); // Find the span
+            var currentValue = parseInt($counterSpan.text(), 10); // Current value
+            var newValue = currentValue + 1; // Increment by 1
+            $counterSpan.text(newValue); // Update the span
+            console.log(newValue);
+
+            // Call the API to update MongoDB
+            updatePermission($(this).data('permission'), newValue, 'int'); // Use appropriate key
+        });
+        
+    });
 </script>
 
+@endsection
 @endsection

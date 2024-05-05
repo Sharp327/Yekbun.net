@@ -647,6 +647,7 @@ Route::middleware(['admin.auth', '2fa'])->group(function () use ($controller_pat
             Route::get('/premium', [UserRolesController::class, 'premium'])->name('premium');
             Route::get('/vip', [UserRolesController::class, 'vip'])->name('vip');
             Route::get('/fanpage', [UserRolesController::class, 'fanpage'])->name('fanpage');
+            Route::post('/update', [UserRolesController::class, 'update'])->name('update.permissions');
         });
 
         // Pricing
