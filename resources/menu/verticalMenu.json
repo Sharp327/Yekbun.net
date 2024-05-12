@@ -18,17 +18,17 @@
       "submenu": [
         {
           "url": "/users/standard",
-          "name": "Standard",
+          "name": "Educated",
           "slug": "users.standard.index"
         },
         {
           "url": "/users/premium",
-          "name": "Premium",
+          "name": "Caltivated",
           "slug": "users.premium.index"
         },
         {
           "url": "/users/vip",
-          "name": "VIP",
+          "name": "Academic",
           "slug": "users.vip.index"
         },
         {
